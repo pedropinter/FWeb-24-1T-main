@@ -1,45 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="pt-br"> 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokédex</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pokédex</title> <!-- Título da Guia -->
+    <link rel="stylesheet" href="style.css"> <!-- Vincula o CSS -->
 </head>
 <body>
-    <audio id="musica" src="assets/Pokémon Theme Song.mp3" loop></audio>
+    <audio id="musica" src="assets/Pokémon Theme Song.mp3" loop></audio> <!-- Reproduz música em loop (sem autoplay) -->
 
     <main>
-        <div id="container">
-            <figure id="figPK">
-                <img src="assets/pokedeximg.png" alt="Imagem Pokedex">
+        <div id="container"> <!-- Container principal -->
+
+            <figure id="figPK"> <!-- Definindo id para a imagem da Pokédex -->
+                <img src="assets/pokedeximg.png" alt="Imagem Pokedex"> <!-- Imagem da Pokédex -->
             </figure>
-            <figure id="imgPK">
-                <img id="fotoPK" src="" alt="Imagem Pokemon">
+
+            <figure id="imgPK"> <!-- Definindo id para a imagem do Pokémon -->
+                <img id="fotoPK" src="" alt="Imagem Pokemon"> <!-- Imagem do Pokémon (JS irá definir) -->
             </figure>
-        <form id="formPK" action="">
-            <input id="inputPK" type="text">
-        </form>
-        <div id="nome">
-            <span id="idPK">ID</span>
-            <span id="nomePK">Nome</span>
+
+            <form id="formPK" action=""> <!-- Definindo id para buscar o Pokémon -->
+                <input id="inputPK" type="text"> <!-- Campo de texto para busca do Pokémon -->
+            </form>
+
+            <div id="nome"> <!-- Seção com ID e nome do Pokémon -->
+                <span id="idPK">ID</span> <!-- ID do Pokémon -->
+                <span id="nomePK">Nome</span> <!-- Nome do Pokémon -->
+            </div>
+
+            <div id="info1"> <!-- Definindo id para as informações de tipo e habilidade -->
+                <span id="tipo1PK">Tipo1</span> <!-- Primeiro tipo -->
+                <span id="tipo2PK">Tipo2</span> <!-- Segundo tipo (caso exista) -->
+                <div id="habiPK">Habilidade</div> <!-- Habilidade principal -->
+            </div>
+
+            <div id="info2"> <!-- Definindo id para as informações de peso e altura -->
+                <span id="pesoPK">Peso</span> <!-- Peso do Pokémon -->
+                <span id="alturaPK">Altura</span> <!-- Altura do Pokémon -->
+            </div>
+
+            <div id="botoes"> <!-- Definindo id para os botões -->
+                <button id="btnPlay">Play</button> <!-- Botão para tocar e pausar a música -->
+                <button id="btnVoltar">Voltar</button> <!-- Volta ao Pokémon anterior -->
+                <button id="btnProximo">Proximo</button> <!-- Avança para o próximo Pokémon -->
+            </div>
         </div>
-        <div id="info1">
-            <span id="tipo1PK">Tipo1</span>
-            <span id="tipo2PK">Tipo2</span>
-            <div id="habiPK">Habilidade</div>
-        </div>
-        <div id="info2">
-            <span id="pesoPK">Peso</span>
-            <span id="alturaPK">Altura</span>
-        </div>
-        <div id="botoes">
-            <button id="btnPlay">Play</button>
-            <button id="btnVoltar">Voltar</button>
-            <button id="btnProximo">Proximo</button>
-        </div>
-    </div>
     </main>
-    <script src="./script.js"></script>
+    <script src="./script.js"></script> <!--Vincula o JavaScript -->
 </body>
 </html>

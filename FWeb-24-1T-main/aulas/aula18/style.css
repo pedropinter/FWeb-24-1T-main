@@ -1,76 +1,89 @@
 @font-face {
-    font-family: 'Pokemon Solid';
-    src: url('assets/Pokemon Solid.ttf') format('truetype');
+    font-family: 'Pokemon Solid'; /* Define uma fonte personalizada */
+    src: url('assets/Pokemon Solid.ttf') format('truetype'); /* Caminho da fonte */
 }
-body{
-    background: url(assets/pokemonwallpaper.jpeg);
-    background-size: 100% 100%;
-    color: #D6D6D6;
+
+body {
+    background: url(assets/pokemonwallpaper.jpeg); /* Imagem de fundo */
+    background-size: 100% 100%; /* Faz a imagem cobrir todo o fundo */
+    color: #D6D6D6; /* Cor padrão do texto */
 }
-main{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 90%;
-    font-family: 'Pokemon Solid';
+
+main {
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100%; /* Ocupa toda a altura */
+    display: flex; /* Layout em flexbox */
+    justify-content: center; /* Centraliza o conteúdo */
+    font-size: 90%; /* Tamanho da fonte reduzido um pouco */
+    font-family: 'Pokemon Solid'; /* Usa a fonte personalizada */
 }
-figure{
-    width: 400px;
-    height: 600px;
+
+figure {
+    width: 400px; /* Largura da imagem da Pokédex */
+    height: 600px; /* Altura da imagem */
 }
-#container{
-    position:relative;
+
+#container {
+    position: relative; /* Define o posicionamento absoluto dos filhos */
 }
-#imgPK{
-    position: absolute;
-    top: 25%;
-    left: 30%;
+
+#imgPK {
+    position: absolute; /* Posiciona a imagem do Pokémon */
+    top: 25%; /* Distância do topo do container */
+    left: 30%; /* Distância da esquerda */
 }
-#formPK{
-    position: absolute;
-    top: 42%;
-    left: 32%;
+
+#formPK {
+    position: absolute; /* Posiciona o formulário */
+    top: 42%; /* Distância do topo */
+    left: 32%; /* Distância da esquerda */
 }
-#inputPK{
-    box-shadow: 2px 4px #9A9A9A;
+
+#inputPK {
+    box-shadow: 2px 4px #9A9A9A; /* Sombra no input */
 }
-#nome{
+
+#nome {
+    position: relative; /* Posiciona relativamente ao container */
+    bottom: 26%; /* Sobe a altura */
+    left: 30%; /* Move para a direita */
+}
+
+#info1 {
     position: relative;
-    bottom:26%;
-    left: 30%;
+    bottom: 27%; /* Sobe a altura */
+    left: 30%; /* Move para a direita */
 }
-#info1{
+
+#info2 {
     position: relative;
-    bottom: 27%;
-    left: 30%;
+    bottom: 28%; /* Sobe a altura */
+    left: 30%; /* Move para a direita */
 }
-#info2{
+
+#botoes {
     position: relative;
     bottom: 28%;
-    left: 30%;
+    left: 36%; /* Um pouco mais à direita para centralizar os botões */
 }
-#botoes{
+
+#btnPlay {
     position: relative;
-    bottom: 28%;
-    left: 36%;
+    width: 14%; /* Largura do botão */
+    height: 6vh; /* Altura relativa */
+    right: 7%; /* Move um pouco para a esquerda */
+    box-shadow: -2px 2px gray; /* Sombra para dar efeito */
+    border-radius: 50px; /* Bordas arredondadas */
+    background-color: #6D9EEB; /* Azul claro */
+    font-family: 'Pokemon Solid'; /* Fonte temática */
 }
-#btnPlay{
-    position: relative;
-    width: 14%;
-    height: 6vh;
-    right: 7%;
-    box-shadow: -2px 2px gray;
-    border-radius: 50px;
-    background-color: #6D9EEB;
-    font-family: 'Pokemon Solid';
-}
-#btnVoltar,#btnProximo{
-    width: 14%;
-    height: 6vh;
-    box-shadow: -2px 2px gray;
-    border-radius: 50px;
-    background-color: #FFD700;
-    flex-direction: column;
-    font-family: 'Pokemon Solid';
+
+#btnVoltar, #btnProximo {
+    width: 14%; /* Largura do botão */
+    height: 6vh; /* Altura relativa */
+    box-shadow: -2px 2px gray; /* Sombra para dar efeito */
+    border-radius: 50px; /* Bordas arredondadas */
+    background-color: #FFD700; /* Amarelo ouro */
+    flex-direction: column; /* Alinha conteúdo verticalmente */
+    font-family: 'Pokemon Solid'; /* Fonte temática */
 }
