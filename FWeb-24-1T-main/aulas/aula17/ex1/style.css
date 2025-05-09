@@ -1,17 +1,17 @@
 body{
     text-align: center;
-    background-color: coral;
+    background-color: green;
     padding: 20px;
 }
 h1{
-    color: blueviolet;
+    color: blue;
 }
 ul{
     list-style-type: none;
     padding: 0;
 }
 li{
-    background-color: blanchedalmond;
+    background-color: white;
     margin:  10px 0;
     padding: 10px;
     border-radius: 5px;
