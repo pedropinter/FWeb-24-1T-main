@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.5s;
+}
+
+body {
+    background: rgb(250, 235, 215);
+}
+
+header {
+    background-color: rgb(245, 222, 179);
+    padding: 2px;
+    display: flex;
+}
+
+nav {
+    margin-top: 2vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: white;
+}
+
+nav a:active {
+    background-color: grey;
+    color: white;
+}
+
+main {
+    position: relative;
+}
+
+article {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /*mexe nas camadas ele que bota o fundo pra frente */
+    background-color: rgba(205 170 125	);
+    padding: 20px;
+    border-radius: 15px;
+    width: 50vw;
+    height: 25vw;
+    text-align: center;
+    margin-top: 40vh;
+}
+
+article a {
+    text-decoration: none;
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    /* Centraliza o texto pra cima ou pra baixo */
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+article .zap {
+    background-color: black;
+}
+article .instagram {
+    background-color: black;
+}
+article .github {
+    background-color: black;
+}
+article .linkedin {
+    background-color: black;
+}
+article a:hover {
+    transform: scale(1.5);
+}

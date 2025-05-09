@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parallax Vertical</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      background: url(../assets/avengers.jpg);
+      overflow: hidden;
+    }
+
+    #port {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 60px; /* Espaço entre as imagens */
+    }
+
+    .parallax-layer {
+      width: 250px;
+      height: 300px;
+      transition: transform 0.1s ease-out;
+      pointer-events: none;
+      will-change: transform;
+    }
+
+    .parallax-layer:nth-child(1) { z-index: 1; opacity: 0.5; }
+    .parallax-layer:nth-child(2) { z-index: 2; opacity: 0.8; }
+    .parallax-layer:nth-child(3) { z-index: 3; opacity: 1; }
+  </style>
+</head>
+<body>
+  <div id="port">
+    <img class="parallax-layer" src="../assets/mark1.jpeg" alt="Camada 1" />
+    <img class="parallax-layer" src="../assets/ironman.jpg" alt="Camada 2" />
+    <img class="parallax-layer" src="../assets/ironman2.jpeg" alt="Camada 3" />
+  </div>
+
+  <script src="../jquery/js/jQuery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      const $layers = $('.parallax-layer');
+      const $port = $('#port');
+
+      $port.on('mousemove', function (e) {
+        const offsetX = (e.pageX / $port.width()) - 0.5;
+        const offsetY = (e.pageY / $port.height()) - 0.5;
+
+        $layers.each(function (index) {
+          const depth = (index + 1) * 10;
+          const translateX = offsetX * depth;
+          const translateY = offsetY * depth;
+
+          $(this).css('transform',` translate(${translateX}px, ${translateY}px)`);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

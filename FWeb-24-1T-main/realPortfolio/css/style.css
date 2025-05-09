@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: 0.5s;
+}
+
+body {
+  background: rgb(250, 235, 215);
+}
+main{
+    height: 70vh;
+}
+.cartao1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10vh;
+  flex-wrap: wrap;
+}
+
+#texto {
+  flex: 1;
+  padding-right: 20px;
+  font-size: 3vh;
+}
+
+#imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#rosto {
+  width: 55vh;
+  border-radius: 5%;
+      border: 3px solid rgb(222, 184, 135);
+
+}

@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.5s;
+  }
+  
+  body {
+    background: rgb(250, 235, 215);
+  }
+  
+  header {
+    background-color: rgb(245, 222, 179);
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  nav {
+    margin-top: 2vh;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    padding: 10px 15px;
+    border-radius: 30px;
+  }
+  
+nav a:hover {
+    background-color: #333;
+    color: white;
+}
+main img{
+    height: 20vh;
+    border-radius: 15px;
+    margin: 10px;
+    margin: 40px;
+    margin-left: 10vh;
+}
+main img:hover{
+    transform: scale(1.1);
+}
+.lasalle{
+    display: inline-block;
+}
+.wizard{
+    display: inline-block;
+}
+.senac img, .lasalle img, .wizard img{
+    width: 55vh;
+    height: 30vh;
+    border: 3px solid rgb(222, 184, 135);
+}
+main{
+    text-align: center;
+}
+main p {
+    margin-left: 3vw;
+ }

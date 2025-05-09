@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+.btn-danger-custom {
+    background-color: #D32F2F;
+    color: black;
+    border: none;
+}
+.btn-danger-custom:hover {
+    background-color: #b71c1c;
+    color: black;
+}
+.card-body{
+    background-color: black;
+    color: white;
+}

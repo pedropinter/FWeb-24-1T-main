@@ -1,0 +1,14 @@
+.dpainel{
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: green;
+    margin: 10px;
+    position: relative;
+}
+img{
+    width: 50px;
+    position: absolute;
+    bottom: 280px;
+    right: 380px;
+}

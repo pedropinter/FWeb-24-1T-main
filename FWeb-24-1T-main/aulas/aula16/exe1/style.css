@@ -1,0 +1,9 @@
+body{
+    background-color: darkblue;
+}
+img{
+    width: 200px;
+    height: 350px;
+    border-radius: 15px;
+    border: 2px solid black;
+}

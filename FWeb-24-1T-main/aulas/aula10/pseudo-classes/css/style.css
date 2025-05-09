@@ -1,0 +1,39 @@
+html, body, main{
+    height: 100%;
+    height: 100%;
+}
+/*li:first-child{
+    color: red;
+}
+li:last-child{
+    color: purple;
+}
+li:nth-child(3){
+    color: blue;
+}
+a:hover{
+    background-color: pink;
+}
+:visited{ background-color: gold;}
+:link{background-color: gray;}
+:active{background-color: green;}
+p::first-letter{color: darkgray;}
+p::first-line{color: violet;}
+p::before{content: "X";}
+p::after{content: "Y";}
+p:hover{background-color: aliceblue;}
+li ul{
+    display: none;
+    transition: 100ms ease-in-out;
+}
+li:hover ul{
+    display: block;
+    transition: 100ms ease-in-out;
+    background-color: yellow;
+}
+*/
+p{text-shadow: 10px 10px 2px red;}
+.p{
+    opacity: 0.3;
+    background-color: rgba(255, 100, 255, 0.9);
+}

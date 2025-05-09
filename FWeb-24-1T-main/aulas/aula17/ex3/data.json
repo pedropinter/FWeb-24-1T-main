@@ -1,0 +1,34 @@
+{
+    "pessoas" : [
+        {
+            "nome": "João",
+            "idade": 15,
+            "cpf": 900890001 ,
+            "telefone": 80409030
+        },
+        {
+            "nome": "Maria",
+            "idade": 16,
+            "cpf": 900890002 ,
+            "telefone": 80409031
+        },
+        {
+            "nome": "Miguel",
+            "idade": 17,
+            "cpf": 900890003 ,
+            "telefone": 80409032
+        },
+        {
+            "nome": "Pedro",
+            "idade": 18,
+            "cpf": 900890004 ,
+            "telefone": 80409033
+        },
+        {
+            "nome": "Guilherme",
+            "idade": 20,
+            "cpf": 900890005 ,
+            "telefone": 80409034
+        }
+    ]
+}
