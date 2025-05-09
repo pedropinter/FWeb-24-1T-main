@@ -29,7 +29,7 @@ figure{
 }
 #formPK{
     position: absolute;
-    top: 40%;
+    top: 42%;
     left: 32%;
 }
 #inputPK{
@@ -37,29 +37,40 @@ figure{
 }
 #nome{
     position: relative;
-    bottom:25%;
+    bottom:26%;
     left: 30%;
 }
 #info1{
     position: relative;
-    bottom: 26%;
+    bottom: 27%;
     left: 30%;
 }
 #info2{
     position: relative;
-    bottom: 26%;
+    bottom: 28%;
     left: 30%;
 }
 #botoes{
     position: relative;
-    bottom: 30%;
-    left: 55%;
+    bottom: 28%;
+    left: 36%;
 }
-#btnVoltar,#btnProximo,#btnPlay{
-    width: 13%;
+#btnPlay{
+    position: relative;
+    width: 14%;
+    height: 6vh;
+    right: 7%;
+    box-shadow: -2px 2px gray;
+    border-radius: 50px;
+    background-color: #6D9EEB;
+    font-family: 'Pokemon Solid';
+}
+#btnVoltar,#btnProximo{
+    width: 14%;
     height: 6vh;
     box-shadow: -2px 2px gray;
     border-radius: 50px;
     background-color: #FFD700;
     flex-direction: column;
+    font-family: 'Pokemon Solid';
 }

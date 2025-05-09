@@ -44,6 +44,7 @@ const showPokemon = async(pokemon) =>{
     const audio = new Audio(dataPokemon.cries.latest);
     audio.play();
 }
+/*
 formPK.addEventListener("submit",(event)=>{
     event.preventDefault();
     showPokemon(inputPK.value.toLowerCase());
@@ -59,7 +60,29 @@ btnProximo.addEventListener("click",(event)=>{
         numeroPokedex = numeroPokedex+1
     }
     showPokemon(numeroPokedex);
-})
+})*/
+
+formPK.addEventListener("submit", (event) =>{
+    event.preventDefault();
+    showPokemon(inputPK.value.toLowerCase());
+    numeroPokedex = inputPK.value
+  })
+  
+  // condições para funcionalidade correto dos botões
+  btnVoltar.addEventListener("click", (event) =>{
+    if(numeroPokedex > 1){
+        numeroPokedex--
+    }
+    showPokemon(numeroPokedex);
+  })
+  
+  // condições para funcionalidade correto dos botões
+  btnProximo.addEventListener("click", (event) =>{
+    if(numeroPokedex < 1025){
+        numeroPokedex++
+    }
+    showPokemon(numeroPokedex);
+  })
 
 btnPlay.addEventListener('click',(event)=>{
     if (audio.paused){
